@@ -67,6 +67,7 @@ export const FiltersTable = ({ structure, onFilter }: FiltersTableProps) => {
                 return (
                   <div key={key} className="flex flex-col gap-2">
                     <label className="text-sm">{filter.label}</label>
+
                     <Select
                       id={`filter-${key}`}
                       options={filter.options || []}
@@ -80,6 +81,7 @@ export const FiltersTable = ({ structure, onFilter }: FiltersTableProps) => {
                         }))
                       }
                       value={filters[key]?.value || ""}
+                      placeholder={`Select ${filter.label}`}
                     />
                   </div>
                 );
