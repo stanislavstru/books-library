@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Input from "@/UI/Input";
 
 const SearchInput = ({ onSearch }: { onSearch: (value: string) => void }) => {
